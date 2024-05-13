@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .custom-toggler {
+      background-color: #ffffff;
+    }
+
+    body {
+      background-color: #DBDBDB;
+    }
+
+
+
+    .conteudo {
+      padding: 2rem;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      background-color: white;
+    }
+
+    .card-img {
+      max-width: 1126px;
+      max-height: 300px;
+
+    }
+
+    .card {
+      max-width: 1126px;
+      margin: auto;
+
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .servicos {
+      width: 18rem;
+    }
+
+
+
+    .teste {
+      max-width: 120px;
+    }
+
+    .column-divider {
+      position: relative;
+    }
+
+    .column-divider::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 5px;
+      background-color: #ffffff;
+      transform: translateX(-50%);
+    }
+
+    .servicos2 {
+      background-color: #DBDBDB;
+    }
+
+    .servicos3 {
+      margin-bottom: 2rem;
+    }
+
+    footer {
+            background-color: #343a40;
+            color: #DBDBDB;
+            padding: 20px 0;
+    }
+
+    .footer-col {
+            padding: 0 15px;
+        }
+    .logope {
+      max-width: 80px;
+      padding-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!------Navbar----->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary">
+    <a class="navbar-brand  fw-bold fs-2 text-white ps-3" href="#">Starlift -</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse justify-content-center" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="#fttr">Suporte Técnico</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#sobre">Sobre</a>
+          </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+      </form>
+    </div>
+  </nav>
+  <!--Card com recado-->
+  <section class="conteudo container rounded-5">
+    <div class="recado card text-bg-dark rounded-4">
+      <img src="./assets/img//fundo.png" class="card-img rounded-4" alt="...">
+      <div class="card-img-overlay">
+        <h1 class="display-4">Olá!</h1>
+        <!--Jumbotron-->
+        <div class="jumbotron">
+          <a class="btn btn-primary" href="https://wa.me/5519993277987?text=Ol%C3%A1%2C+gostaria+de+marcar+um+servi%C3%A7o." role="button" target="_blank">Agendar agora!</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="serv">
+      <!--Apresentacao do serviço-->
+      <h1 class="display-5 text-center pt-5 fw-bold">Nossos serviços de manutenção:</h1>
+      <h4 class="lead text-center text-secondary">Realizamos manuntenção em equipamentos de qualquer fabricante</h4>
+    </div>
+
+    <div class="d-flex flex-wrap text-center">
+      <div class="servicos card mb-3 mt-3 rounded-pill">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./assets/img/logo-escura.png" class="teste img-fluid rounded-circle" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h6 class="card-title text-primary pt-4 ps-3">Cadeira Escaladora <br> de Degraus</h6>
+              <a class="icon-link icon-link-hover justify-content-center" href="https://wa.me/5519993277987?text=Ol%C3%A1%2C+gostaria+de+contratar+um+servi%C3%A7o+de+manuten%C3%A7%C3%A3o+em+cadeira+escaladora+de+degraus." target="_blank">
+                Contratar agora
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="servicos card mb-3 mt-3 rounded-pill">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./assets/img/logo-escura.png" class="teste img-fluid rounded-circle" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h6 class="card-title text-primary pt-4 pe-4">Plataformas <br>Horizontais</h6>
+              <a class="icon-link icon-link-hover justify-content-center" href="https://wa.me/5519993277987?text=Ol%C3%A1%2C+gostaria+de+contratar+um+servi%C3%A7o+de+manuten%C3%A7%C3%A3o+em+plataforma+horizontal." target="_blank">
+                Contratar agora
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="servicos card mb-3 mt-3 rounded-pill">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./assets/img/logo-escura.png" class="teste img-fluid rounded-circle" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h6 class="card-title text-primary pt-4 pe-5">Carro <br> Escalador</h6>
+              <a class="icon-link icon-link-hover justify-content-center" href="https://wa.me/5519993277987?text=Ol%C3%A1%2C+gostaria+de+contratar+um+servi%C3%A7o+de+manuten%C3%A7%C3%A3o+em+carro+escalador." target="_blank">
+                Contratar agora
+                <i class="bi bi-arrow-right"></i>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="servicos card mb-3 mt-3 rounded-pill">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./assets/img/logo-escura.png" class="teste img-fluid rounded-circle" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h6 class="card-title text-primary pt-4 pe-5">Cadeira <br>Elevador</h6>
+              <a class="icon-link icon-link-hover justify-content-center" href="https://wa.me/5519993277987?text=Ol%C3%A1%2C+gostaria+de+contratar+um+servi%C3%A7o+de+manuten%C3%A7%C3%A3o+em+cadeira+escaladora." target="_blank">
+                Contratar agora
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="mt-4">
+    <h1 class="display-4 text-center fw-bold" id="serv2">Outros Serviços:</h1>
+    <div class="servicos2 container-fluid rounded-start-5 rounded-end-5">
+      <div class="row column-divider">
+        <div class="col-md-6 d-none d-md-block">
+          <svg class="bi bi-tools pt-5" width="" height="150" fill="currentColor">
+            <use xlink:href="assets\bootstrap-icons.svg#tools" />
+          </svg>
+          <h1 class="text-center text-primary pt-3 display-4 fw-semibold">Instalação e <br> Reinstalação</h1>
+          <h4 class="lead text-center fw-semibold pb-3">Cadeiras Elevadores</h4>
+          <div class="container-fluid rounded-4 bg-white servicos3 p-3">
+            <ul>
+              <li class="pb-2">
+            Você está buscando soluções profissionais e confiáveis ​​para a instalação e reinstalação de equipamentos de acessibilidade em sua residência ou empresa? A Campinas Starlift está aqui para ajudar!
+
+Somos especializados em oferecer serviços completos de instalação e reinstalação de uma variedade de equipamentos de acessibilidade, incluindo:
+<li class="pb-2">
+Elevadores e Plataformas Verticais: Instalação e reinstalação de elevadores e plataformas verticais para facilitar o acesso em diferentes níveis de sua propriedade.
+</li>
+<li class="pb-2">
+Cadeiras e Elevadores de Escada: Implementação de cadeiras e elevadores de escada para garantir mobilidade sem esforço entre diferentes andares.
+Barras de Apoio e Corrimãos: Fixação e ajuste de barras de apoio e corrimãos para garantir segurança e estabilidade em áreas críticas.
+<li class="pb-2">
+Portas Automáticas e Rampa Móvel: Instalação de portas automáticas e rampas móveis para facilitar o acesso a espaços internos e externos.
+</li>
+<li class="pb-2">
+Na Campinas Starlift, nossa equipe altamente qualificada e experiente cuida de todas as etapas do processo de instalação ou reinstalação. Desde a consultoria inicial até a conclusão do trabalho, garantimos um serviço eficiente, pontual e com foco na sua satisfação.
+
+Entendemos a importância da acessibilidade em todos os ambientes e nos comprometemos a oferecer soluções personalizadas que atendam às suas necessidades específicas. Trabalhamos com equipamentos de alta qualidade e garantimos um serviço que valoriza a durabilidade e a segurança.
+Não importa o tamanho ou a complexidade Campinas Starlift está pronta para ajudar a tornar sua propriedade mais acessível e funcional.
+Entre em contato conosco hoje mesmo para discutir suas necessidades de instalação ou reinstalação de equipamentos de acessibilidade. Estamos ansiosos para oferecer soluções sob medida que realmente fazem a diferença em sua vida diária.
+</li>
+</ul>
+
+          </div>
+          <div class="text-center pb-4">
+          <a class="icon-link icon-link-hover" href="https://wa.me/5519993277987?text=Ol%C3%A1+queria+contratar+um+servi%C3%A7o+de+instala%C3%A7%C3%A3o+ou+reinstala%C3%A7%C3%A3o" target="_blank">
+            Contratar agora
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+        </div>
+        <div class="col-md-6 d-none d-md-block">
+          <!-- Conteúdo da segunda metade -->
+          <svg class="bi bi-clipboard-check-fill pt-5" width="" height="150" fill="currentColor">
+            <use xlink:href="assets\bootstrap-icons.svg#clipboard-check-fill" />
+          </svg>
+          <h1 class="text-center text-primary pt-3 display-4 fw-semibold" id="serv2">Emissão de <br> Laudos</h1>
+          <h4 class="lead text-center fw-semibold pb-3">Documentação Técnica</h4>
+          <div class="container-fluid rounded-4 bg-white servicos3">
+            <ul>
+              <li class="pb-3">
+            
+Serviços Profissionais de Emissão de Laudos Técnicos para Equipamentos de Acessibilidade
+</li>
+<li class="pb-2">
+A Campinas Starlift oferece serviços especializados de emissão de laudos técnicos para equipamentos de acessibilidade, garantindo conformidade e segurança em sua propriedade. Nossa equipe qualificada está pronta para ajudar a certificar seus equipamentos com os mais altos padrões de qualidade.
+</li>
+Oferecemos:
+<li class="pb-2">
+Emissão de Laudos de Conformidade: Realizamos inspeções detalhadas e emitimos laudos técnicos que atestam a conformidade de seus equipamentos de acessibilidade com as normas vigentes.
+</li>
+<li class="pb-2">
+Avaliações de Segurança e Funcionalidade: Nossos especialistas avaliam a segurança e o funcionamento dos equipamentos, fornecendo relatórios detalhados sobre seu estado atual e recomendações para otimização, se necessário.
+</li>
+<li class="pb-3">
+Na Campinas Starlift, priorizamos a excelência em nossos serviços. Nossa equipe é altamente capacitada e comprometida em garantir que seus equipamentos de acessibilidade atendam aos mais altos padrões de qualidade e segurança.
+</li>
+<li class="pb-2">
+Conte conosco para emissão de laudos técnicos precisos e confiáveis. Entre em contato hoje mesmo para agendar uma avaliação e garantir a certificação de seus equipamentos de acessibilidade.
+</li>
+<div class="pb-3">
+Estamos aqui para ajudar a tornar sua propriedade mais acessível e funcional com serviços profissionais de emissão de laudos técnicos.
+</div>
+</ul>
+          </div>
+          <div class="text-center pb-4">
+            <a class="icon-link icon-link-hover" href="https://wa.me/5519993277987?text=Ol%C3%A1%2C+gostaria+de+emitir+um+laudo." target="_blank">
+              Contratar agora
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-12 d-md-none"> <!-- Mostra apenas em telas menores que md -->
+        <!-- Conteúdo combinado para telas menores -->
+        <div>
+          <svg class="bi bi-tools pt-5" width="" height="150" fill="currentColor">
+            <use xlink:href="assets\bootstrap-icons.svg#tools" />
+          </svg>
+          <h1 class="text-center text-primary pt-3 display-4 fw-semibold" id="serv2">Instalação e <br> Reinstalação</h1>
+          <h4 class="lead text-center fw-semibold pb-3">Cadeiras Elevadores</h4>
+          <ul>
+            <li class="pb-2">
+          Você está buscando soluções profissionais e confiáveis ​​para a instalação e reinstalação de equipamentos de acessibilidade em sua residência ou empresa? A Campinas Starlift está aqui para ajudar!
+
+Somos especializados em oferecer serviços completos de instalação e reinstalação de uma variedade de equipamentos de acessibilidade, incluindo:
+<li class="pb-2">
+Elevadores e Plataformas Verticais: Instalação e reinstalação de elevadores e plataformas verticais para facilitar o acesso em diferentes níveis de sua propriedade.
+</li>
+<li class="pb-2">
+Cadeiras e Elevadores de Escada: Implementação de cadeiras e elevadores de escada para garantir mobilidade sem esforço entre diferentes andares.
+Barras de Apoio e Corrimãos: Fixação e ajuste de barras de apoio e corrimãos para garantir segurança e estabilidade em áreas críticas.
+<li class="pb-2">
+Portas Automáticas e Rampa Móvel: Instalação de portas automáticas e rampas móveis para facilitar o acesso a espaços internos e externos.
+</li>
+<li class="pb-2">
+Na Campinas Starlift, nossa equipe altamente qualificada e experiente cuida de todas as etapas do processo de instalação ou reinstalação. Desde a consultoria inicial até a conclusão do trabalho, garantimos um serviço eficiente, pontual e com foco na sua satisfação.
+
+Entendemos a importância da acessibilidade em todos os ambientes e nos comprometemos a oferecer soluções personalizadas que atendam às suas necessidades específicas. Trabalhamos com equipamentos de alta qualidade e garantimos um serviço que valoriza a durabilidade e a segurança.
+Não importa o tamanho ou a complexidade do projeto, a Campinas Starlift está pronta para ajudar a tornar sua propriedade mais acessível e funcional.
+Entre em contato conosco hoje mesmo para discutir suas necessidades de instalação ou reinstalação de equipamentos de acessibilidade. Estamos ansiosos para oferecer soluções sob medida que realmente fazem a diferença em sua vida diária.
+</li>
+</ul>
+
+            <div class="text-center pb-4">
+              <a class="icon-link icon-link-hover" href="https://wa.me/5519993277987?text=Ol%C3%A1+queria+contratar+um+servi%C3%A7o+de+instala%C3%A7%C3%A3o+ou+reinstala%C3%A7%C3%A3o">
+                Contratar agora
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+
+          <svg class="bi bi-clipboard-check-fill pt-5" width="" height="150" fill="currentColor">
+            <use xlink:href="assets\bootstrap-icons.svg#clipboard-check-fill" />
+          </svg>
+          <h1 class="text-center text-primary pt-3 display-4 fw-semibold" id="serv2">Emissão de <br> Laudos</h1>
+          <h4 class="lead text-center fw-semibold pb-3">Documentação Técnica</h4>
+
+          <ul>
+            <li class="pb-3">
+          
+Serviços Profissionais de Emissão de Laudos Técnicos para Equipamentos de Acessibilidade
+</li>
+<li class="pb-2">
+A Campinas Starlift oferece serviços especializados de emissão de laudos técnicos para equipamentos de acessibilidade, garantindo conformidade e segurança em sua propriedade. Nossa equipe qualificada está pronta para ajudar a certificar seus equipamentos com os mais altos padrões de qualidade.
+</li>
+Oferecemos:
+<li class="pb-2">
+Emissão de Laudos de Conformidade: Realizamos inspeções detalhadas e emitimos laudos técnicos que atestam a conformidade de seus equipamentos de acessibilidade com as normas vigentes.
+</li>
+<li class="pb-2">
+Avaliações de Segurança e Funcionalidade: Nossos especialistas avaliam a segurança e o funcionamento dos equipamentos, fornecendo relatórios detalhados sobre seu estado atual e recomendações para otimização, se necessário.
+</li>
+<li class="pb-3">
+Na Campinas Starlift, priorizamos a excelência em nossos serviços. Nossa equipe é altamente capacitada e comprometida em garantir que seus equipamentos de acessibilidade atendam aos mais altos padrões de qualidade e segurança.
+</li>
+<li class="pb-2">
+Conte conosco para emissão de laudos técnicos precisos e confiáveis. Entre em contato hoje mesmo para agendar uma avaliação e garantir a certificação de seus equipamentos de acessibilidade.
+</li>
+<div class="pb-3">
+Estamos aqui para ajudar a tornar sua propriedade mais acessível e funcional com serviços profissionais de emissão de laudos técnicos.
+</div>
+</ul>
+
+            <div class="text-center pb-4">
+              <a class="icon-link icon-link-hover" href="https://wa.me/5519993277987?text=Ol%C3%A1%2C+gostaria+de+emitir+um+laudo.">
+                Contratar agora
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!--Sobre mim-->
+  <div>
+    <p class="text-center pt-4 gap-1" id="sobre">
+      <a class="btn btn-lg btn-primary fw-bold" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Quem somos?
+      </a>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+    <ul>
+      <li class="fs-5">
+        Bem-vindo à Campinas Starlift - Especialistas em Equipamentos de Acessibilidade em Campinas
+
+Na Campinas Starlift, estamos comprometidos em tornar espaços mais acessíveis e seguros por meio da manutenção profissional de uma variedade de equipamentos de acessibilidade. Com sede em Campinas, somos uma equipe experiente e dedicada, pronta para atender às necessidades de manutenção e reparo de cadeiras elevadoras, carros escaladores, plataformas horizontais e cadeiras escaladoras de degraus em toda a região.
+
+Nossos Serviços:
+
+Manutenção Preventiva e Corretiva: Oferecemos serviços abrangentes de manutenção para garantir que os equipamentos funcionem de maneira eficaz e segura.
+Reparos Especializados: Nossa equipe técnica altamente qualificada realiza reparos precisos e eficientes para resolver qualquer problema encontrado nos equipamentos.
+Emissão de Laudos Técnicos: Emitimos laudos detalhados que atestam a condição e a conformidade dos equipamentos após a manutenção, assegurando sua adequação às normas de segurança.
+</li>
+<hr>
+<li class="fs-5">
+Por Que Escolher a Campinas Starlift?
+
+Experiência e Confiabilidade: Com anos de experiência no setor, garantimos serviços de alta qualidade e confiabilidade.
+Atendimento Personalizado: Entendemos a importância da acessibilidade e adaptamos nossos serviços às necessidades específicas de cada cliente.
+Compromisso com a Segurança: Priorizamos a segurança em todas as etapas, assegurando que os equipamentos estejam em condições ótimas de funcionamento.
+Entre em Contato Conosco:
+
+Se você precisa de serviços de manutenção em equipamentos de acessibilidade em Campinas ou deseja obter mais informações sobre nossos serviços, não hesite em nos contatar. Estamos aqui para ajudar a garantir que seus espaços sejam acessíveis para todos.
+<br>
+
+<div class="pt-3 d-inline-flex" target="_blank">
+  <a href="https://wa.me/5519993277987">
+<button class="btn btn-primary">
+<i class="bi bi-whatsapp"></i>
+Whatsapp
+</button>
+</a>
+<div class="ps-3">
+  <a href="mailto: m.josesilverio@gmail.com?subject=Assunto%20do%20E-mail&body=Olá,%20" target="_blank">
+<button class="btn btn-primary">
+  <i class="bi bi-envelope"></i>
+  E-mail
+  </button>
+</a>
+</div>
+</div>
+<hr>
+
+Descubra como podemos ajudar a manter seus equipamentos de acessibilidade em perfeito funcionamento!
+</li>
+</ul>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <footer class="footer mt-auto py-3" id="fttr">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 footer-col">
+                <h5>Produtos</h5>
+                <a href="#serv" class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                  <p>Manutenção</p>
+                </a>
+                <a href="#serv2" class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                  <p>Instalação</p>
+                </a>
+                <a href="#serv2" class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                  <p>Reinstalação</p>
+                </a>
+                <a href="#serv2" class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                  <p>Emissão de documentos técnicos</p>
+                </a>
+            </div>
+            <div class="col-md-3 footer-col">
+                <h5>Suporte</h5>
+                <a href="./ajuda.html" class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <p>Ajuda</p>
+              </a>
+              <a href="./faq.html" class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <p>Perguntas Frequentes</p>
+              </a>
+              <a href="" class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <p>Guia de navegação</p>
+              </a>
+
+            </div>
+            <div class="col-md-3 footer-col">
+                <h5>Saiba mais</h5>
+                <a href="./garantia.html" class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                  <p>Garantia</p>
+                </a>
+            </div>
+            <div class="col-md-3 footer-col">
+                <h5>Contato</h5>
+                <a href="https://wa.me/5519993277987" target="_blank" class="link-underline link-underline-opacity-0 link-secondary">
+                <i class="bi bi-whatsapp"> : +55 (19) 99327-7987</i> <br>
+              </a>
+              <a href="mailto:m.josesilverio@gmail.com?subject=Assunto%20do%20E-mail&body=Olá,%20" class="link-underline link-underline-opacity-0 link-secondary" target="_blank">
+                <i class="bi bi-envelope"> : m.josesilverio@gmail.com</i>
+              </a>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12 text-center">
+              <img class="logope rounded-circle" src="./assets/img/logo.png" alt="">
+                <span class="text-secondary">© 2024 NewLevel</span>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>
